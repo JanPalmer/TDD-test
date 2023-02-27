@@ -14,12 +14,6 @@ namespace Workshop
                 return 0;
 
             int result = 0;
-            if (int.TryParse(str, out result))
-            { 
-                if(result < 0) { throw new ArgumentException(); }
-                if (result > 1000) return 0;
-                return result; 
-            }
 
             char separator;
             string[] numbers;
